@@ -1,0 +1,54 @@
+
+.center {
+    margin-left: auto;
+       margin-right: auto;
+    display: block;
+    margin-Top:10px;
+}
+.effect{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tabbar a[aria-selected=true] {
+    border-bottom: 2px;
+    border-style: solid;
+    font-weight: bold;
+
+    
+}
+.imageview {     
+    width:100% !important;  
+    height : 100% !important;  
+    max-width: 100px !important;  
+    max-height: 100px !important;  
+    }
+    .topcorner{
+        position:absolute;
+        top:15px;
+        right:20px;
+        padding: 2px;
+        background-color: #ffffff;
+        border-radius: 3px;
+        padding-left:3px;
+        padding-right:3px;  
+       }
+
+
+       .lines{
+        border-bottom: 2px;
+        border-style: solid;
+        border-color: black;
+        background-color: bisque
+       }
+
+       .normal{
+           background-color: bisque
+       }
+
+
+       .textoverflow{
+        text-overflow: ellipsis;
+        overflow: hidden; 
+        width: 160px; 
+        height: 1.2em; 
+        white-space: nowrap;
+       }
