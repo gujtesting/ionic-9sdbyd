@@ -52,3 +52,89 @@
         height: 1.2em; 
         white-space: nowrap;
        }
+
+
+gradient()
+  background-image: linear-gradient(90deg, #031f4b 0%, #04396c 20%, #031f4b 20%, #035b96 40%, #031f4b 40%, #6497b1 60%, #031f4b 60%, #60bafd 80%, #031f4b 80%, #93d1ff 100%)
+  background-position: 0 0
+  background-repeat: repeat-x
+  animation: movebar 5s linear infinite
+
+body
+html
+.wrapper
+  width:  100%
+  height: 100%
+
+.wrapper
+  position: relative
+  background: #e7f0f7
+
+.progressbar
+  display: block
+  position: absolute
+  z-index: 9
+  top:    0
+  right:  0
+  bottom: 0
+  left:   0
+  margin: auto
+  width: 400px
+  height: 10px
+  
+  &::before
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    z-index: 99
+    top:  0
+    left: 0
+    width:  100%
+    height: 100%
+    border-radius: 15px
+    gradient()
+  
+  &::before
+    box-shadow: 0 6px 10px 0 rgba(black,.1)
+  
+  &::after
+    z-index: 9
+    top:  6px
+    filter: blur(16px)
+    opacity: .7
+
+.stylization
+  position: absolute
+  z-index: 999
+  height: 4px
+  width: 90%
+  left: 5%
+  top: 3px
+  opacity: .3
+  
+  &::before
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    height: 4px
+    top: 0
+    border-radius: 2px
+  
+  &::before
+    background: #fff
+    left: 0
+    right: 10px
+  
+  &::after
+    width: 6px
+    background: #fff
+    right: 0
+  
+
+@keyframes movebar
+  from
+    background-position: 0 0
+  to
+    background-position: 400px 0
